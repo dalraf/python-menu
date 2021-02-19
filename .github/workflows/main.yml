@@ -20,3 +20,7 @@ jobs:
     - name: build with pyinstaller
       run: |
         pyinstaller --onefile python-menu.py
+    - uses: actions/upload-artifact@v2
+      with:
+        name: python-menu.exe
+        path: D:\a\python-menu\python-menu\dist\python-menu.exe
